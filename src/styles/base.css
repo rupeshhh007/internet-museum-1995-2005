@@ -1,0 +1,87 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: #c0c0c0;
+    color: #000;
+    margin: 14px 18px;
+    line-height: 1.25;
+    overflow: auto;
+    }
+    p {
+    margin: 8px 0 10px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 0 6px;
+    }
+    ul, ol {
+    margin: 8px 18px;
+    padding-left: 18px;
+    }
+    table {
+    border-collapse: collapse;
+    border: 1px solid #808080;
+    }
+    td, th {
+    border: 1px solid #808080;
+    padding: 4px 6px;
+    }
+    a {
+    color: blue;
+    text-decoration: underline;
+    }
+    a:visited {
+    color: purple;
+    }
+    a:hover {
+    color: #000080;
+    }
+    a:active {
+    color: #f00;
+    }
+    small {
+    font-size: 12px;
+    }
+    img {
+    border: none;
+    }
+    @keyframes blink {
+        0% { visibility: visible; }
+        50% { visibility: hidden; }
+        100% { visibility: visible; }
+      }
+      
+      .blink {
+        animation: blink 1s steps(1) infinite;
+        font-weight: bold;
+      }
+      
+      /* Marquee-style horizontal scroll */
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        border: 1px solid #808080;
+        background: #c0c0c0;
+      }
+      
+      .marquee-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 12s linear infinite;
+      }
+      
+      /* Fake loading bar */
+      @keyframes loadbar {
+        0% { width: 0%; }
+        100% { width: 100%; }
+      }
+      
+      .loading-bar {
+        height: 12px;
+        background: #000080;
+        animation: loadbar 3s linear infinite;
+      }
