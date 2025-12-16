@@ -15,7 +15,7 @@ export function execute(cmd, context) {
     case "help":
       return [
         "Available commands:",
-        "system : help clear uptime whoami date reboot ps",
+        "abhinav : help clear uptime whoami date reboot ps",
         "network: ping traceroute ifconfig netstat nslookup",
         "files  : ls cd pwd cat tree",
         "misc   : hack exit"
